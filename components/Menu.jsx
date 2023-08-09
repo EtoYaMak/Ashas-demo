@@ -1,5 +1,3 @@
-"use client";
-
 import MenuItem from "@app/menu/MenuItem/page";
 import { menuItems } from "@public/menuItems"; // adjust the path based on where you saved the file
 

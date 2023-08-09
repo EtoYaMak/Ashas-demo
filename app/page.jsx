@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,7 +8,7 @@ const Home = () => {
    h-[80vh] mb-2 flex flex-col justify-center items-center gap-4  bg-black"
     >
       <div className="background z-0 blur-sm" />
-      <div className=" z-10 flex flex-col bg-black/80 backdrop-blur-sm w-full mx-auto px-2 py-10 ">
+      <div className=" z-10 flex flex-col bg-black/20 backdrop-blur-sm w-full mx-auto px-2 py-10 ">
         <Image
           src="/assets/Goldlogo.png"
           alt="Ashas Logo"
