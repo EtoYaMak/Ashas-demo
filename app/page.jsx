@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <section
       className="w-full
-   min-h-max h-[90vh] flex flex-col justify-center items-center gap-4  bg-black"
+   min-h-max h-[90vh] flex flex-col justify-center items-center gap-4  bg-black  overflow-hidden"
     >
-      <div className="background z-0 blur-sm max-h-fit" />
-      <div className=" z-10 flex flex-col bg-black/40 backdrop-blur-sm w-full mx-auto px-2 py-[12vh]">
+      <div className="background z-0 blur-[3px] " />
+      <div className=" z-10 flex flex-col bg-black/40 backdrop-blur-[3px] w-full mx-auto px-2 py-[12vh]">
         <Image
           src="/assets/Goldlogo.png"
           alt="Ashas Logo"

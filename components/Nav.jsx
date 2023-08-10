@@ -33,7 +33,7 @@ const Nav = () => {
   }, [mobileMenuOpen]);
   return (
     <div className="w-full z-50 overflow-x-clip h-24">
-      <nav className="relative bg-black backdrop-blur-sm h-24 z-50 border-b-2 border-[#cf9241]">
+      <nav className="relative bg-black backdrop-blur-sm h-24 z-50 border-b-2 border-[#cf9241] uppercase font-inter">
         <Link href="/" className="h-full w-fit mx-auto flex">
           <Image
             src="/assets/Goldlogo.png"
