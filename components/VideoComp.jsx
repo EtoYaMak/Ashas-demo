@@ -8,6 +8,20 @@ const VideoComp = ({ videoUrl, onClose }) => {
 
   const [isOpen, setIsOpen] = useState(true); // Initialize the video as open
   const [playVideo, setPlayVideo] = useState(false); // To control when to play the video
+  useEffect(() => {
+    // Disable scroll when video is open
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      // Enable scroll when video is closed
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      // Reset overflow when component is unmounted
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   const transitions = useTransition(isOpen, {
     from: {
@@ -57,7 +71,7 @@ const VideoComp = ({ videoUrl, onClose }) => {
     (style, item) =>
       item && (
         <AnimatedDiv
-          className="fixed inset-0 flex items-center bg-black/90 backdrop-blur-sm justify-center"
+          className="fixed inset-0 flex items-center bg-black/90 backdrop-blur-sm justify-center h-[90vh]"
           style={style}
           onClick={handleOverlayClick}
         >

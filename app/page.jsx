@@ -5,19 +5,17 @@ const Home = () => {
   return (
     <section
       className="w-full
-   h-[80vh] mb-2 flex flex-col justify-center items-center gap-4  bg-black"
+   min-h-max h-[90vh] flex flex-col justify-center items-center gap-4  bg-black"
     >
-      <div className="background z-0 blur-sm" />
-      <div className=" z-10 flex flex-col bg-black/20 backdrop-blur-sm w-full mx-auto px-2 py-10 ">
+      <div className="background z-0 blur-sm max-h-fit" />
+      <div className=" z-10 flex flex-col bg-black/40 backdrop-blur-sm w-full mx-auto px-2 py-[12vh]">
         <Image
           src="/assets/Goldlogo.png"
           alt="Ashas Logo"
           width={220}
           height={220}
-          className="object-contain mx-auto"
+          className="object-contain mx-auto saturate-150"
         />
-      </div>
-      <div className="z-10">
         <Link
           href="/menu"
           className="z-10 text-3xl font-inter flex items-center justify-center

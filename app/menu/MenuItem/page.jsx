@@ -26,7 +26,7 @@ const MenuItem = ({ imgSrc, altText, price, title, videoUrl, onLongPress }) => {
   return (
     <div
       className="flex flex-col font-inter select-none
-     bg-none saturate-[55%] hover:saturate-[120%] ease-in-out duration-200 max-[500px]:w-full max-[500px]:mx-4"
+     bg-none saturate-[55%] hover:saturate-[85%] ease-in-out duration-200 max-[500px]:w-full max-[500px]:mx-4"
       onMouseDown={handlePressStart}
       onMouseUp={handlePressEnd}
       onTouchStart={handlePressStart}
@@ -34,13 +34,13 @@ const MenuItem = ({ imgSrc, altText, price, title, videoUrl, onLongPress }) => {
     >
       <div className="item group  ease-in-out duration-300 hover:scale-105 bg-transparent">
         {/* This bg-white is visible on the edges of the image.. */}
-        <div href="" className="mx-auto h-fit w-fit  ">
+        <div href="" className="mx-auto h-fit w-fit max-[500px]:w-full ">
           <Image
             src={imgSrc}
             alt={altText}
             width={240}
             height={240}
-            className=" rounded-t-md md:w-[200px] w-[200px] md:h-[200px] h-[200px] object-cover max-[500px]:w-full"
+            className=" rounded-t-md  w-[200px]  h-[200px]  object-cover max-[500px]:w-full"
           />
         </div>
         <div className="group bg-zinc-50 hover:bg-white rounded-b-md text-center">
